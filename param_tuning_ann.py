@@ -91,7 +91,10 @@ y_pred=(y_pred>0.5)
 
 #Evaluating the results
 from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
+
 print(classification_report(y_pred,y_ts))
+print(confusion_matrix(y_pred,y_ts))
 
 
 
